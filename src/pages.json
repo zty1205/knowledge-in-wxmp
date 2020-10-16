@@ -1,16 +1,65 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "API"
+      }
+    },
+    {
+      "path": "pages/wxcomp/index",
+      "style": {
+        "navigationBarTitleText": "组件"
+      }
+    },
+    {
+      "path": "pages/comp/index",
+      "style": {
+        "navigationBarTitleText": "自定"
+      }
+    },
+    {
+      "path": "pages/other/index",
+      "style": {
+        "navigationBarTitleText": "其他"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/home.png",
+        "selectedIconPath": "static/image/home-active.png",
+        "text": "微信接口"
+      },
+      {
+        "pagePath": "pages/wxcomp/index",
+        "iconPath": "static/image/cart.png",
+        "selectedIconPath": "static/image/cart-active.png",
+        "text": "微信组件"
+      },
+      {
+        "pagePath": "pages/comp/index",
+        "iconPath": "static/image/mine.png",
+        "selectedIconPath": "static/image/mine-active.png",
+        "text": "自定组件"
+      },
+      {
+        "pagePath": "pages/other/index",
+        "iconPath": "static/image/other.png",
+        "selectedIconPath": "static/image/other-active.png",
+        "text": "其他事项"
+      }
+    ]
+  }
 }
